@@ -5,12 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="icon"
@@ -22,72 +21,86 @@
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <title>Dogtora Kathe</title>
   </head>
-  <body class="d-flex flex-column h-100">
-    <nav
-      class="navbar navbar-expand-sm navbar-dark bg-dark"
-      aria-label="navbar"
-    >
-      <div class="container-fluid">
-        <a href="#">
-          <img src="./assets/images/Logo.png" alt="Logo" />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbar"
-          aria-controls="navbar"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link active" aria-current="page"
-                >Inicio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="./clientes.html"
-                class="nav-link disabled"
-                aria-current="page"
-                >Clientes</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="./contacto.html"
-                class="nav-link disabled"
-                aria-current="page"
-                >Contacto</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="./galeria.html"
-                class="nav-link disabled"
-                aria-current="page"
-                >Galeria</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="./nosotros.html" class="nav-link" aria-current="page"
-                >Nosotros</a
-              >
-            </li>
-          </ul>
+  <body>
+    <header>
+      <nav
+        class="navbar navbar-expand-md navbar-dark bg-dark"
+        aria-label="navbar"
+      >
+        <div class="container-fluid">
+          <a href="#">
+            <img src="./assets/images/Logo.png" alt="Logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+              <li class="nav-item">
+                <a
+                  href="./index.html"
+                  class="nav-link active"
+                  aria-current="page"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./clientes.html"
+                  class="nav-link disabled"
+                  aria-current="page"
+                  >Clientes</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./contacto.html"
+                  class="nav-link disabled"
+                  aria-current="page"
+                  >Contacto</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  href="./galeria.html"
+                  class="nav-link disabled"
+                  aria-current="page"
+                  >Galeria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="./nosotros.html" class="nav-link" aria-current="page"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
 
-    <main class="flex-shrink-0">
-      <div class="container descripcion">
-        <img src="./assets/images/peluquero.jpg" alt="" />
-        <h1>Dogtora Kathe</h1>
-        <p>
+    <main>
+      <div class="row container-fluid">
+        <div class="col-md-4 col-sm-12 text-center">
+          <div>
+            <img
+              src="./assets/images/peluquero.jpg"
+              alt="Peluquero"
+              class="img-flex"
+            />
+          </div>
+          <h1>Dogtora Kathe</h1>
+        </div>
+
+        <p class="px-5 col-md-8 col-sm-12">
           Somos una peluqueria ubicada en Bogotá, Colombia, dedicada a la
           atención de todos los perros y gatos de la ciudad con el mayor amor,
           profesionalismo y dedicación, con el fin de brindarte a ti y a tu
@@ -98,9 +111,9 @@
         </p>
       </div>
 
-      <div class="container servicios">
-        <h2>Servicios</h2>
-        <ul>
+      <div class="servicios container-fluid">
+        <h2 class="text-center">Servicios</h2>
+        <ul class="d-flex justify-content-between pt-2">
           <li>Baños 🚿</li>
           <li>Corte ✂</li>
           <li>Peinados 🐾</li>
@@ -109,9 +122,9 @@
         </ul>
       </div>
 
-      <div class="container clientes">
-        <h2>Nuestros Clientes</h2>
-        <article id="cliente1">
+      <div class="clientes container-fluid mt-3 mb-2">
+        <h2 class="text-center">Nuestros Clientes</h2>
+        <article id="cliente1" class="mb-3">
           <h3>Coco</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
@@ -119,10 +132,16 @@
             voluptatum magni sint dolor molestias quae totam harum animi libero
             tenetur optio dignissimos incidunt!
           </p>
-          <img src="./assets/images/cliente1.jpg" alt="Coco el labrador" />
+          <div>
+            <img
+              src="./assets/images/cliente1.jpg"
+              alt="Coco el labrador"
+              class="img-fluid"
+            />
+          </div>
         </article>
 
-        <article id="cliente2">
+        <article id="cliente2" class="mb-1">
           <h3>Kaysa</h3>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
@@ -130,55 +149,55 @@
             voluptate, nobis omnis labore fugit distinctio! Ad a veritatis ipsam
             reprehenderit minus!
           </p>
-          <img src="./assets/images/cliente2.jpg" alt="Kaysa Maltese" />
+          <div>
+            <img
+              src="./assets/images/cliente2.jpg"
+              alt="Kaysa Maltese"
+              class="img-fluid"
+            />
+          </div>
         </article>
       </div>
 
-      <div class="container ubicacion">
+      <div class="ubicacion container-fluid">
         <h2>Ubicación</h2>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.145505512432!2d-74.02881115384785!3d4.744758788321057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8f8047571ea3%3A0xb6a37ae8e071a7d3!2zQ3JhLiA4ZiAjMTY2LTM0LCBVc2FxdcOpbiwgQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1648399711787!5m2!1ses!2sco"
-          width="500"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.145505512432!2d-74.02881115384785!3d4.744758788321057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f8f8047571ea3%3A0xb6a37ae8e071a7d3!2zQ3JhLiA4ZiAjMTY2LTM0LCBVc2FxdcOpbiwgQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1648399711787!5m2!1ses!2sco"
+            width="500"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="img-fluid w-100"
+          ></iframe>
+        </div>
       </div>
     </main>
 
-    <footer
-      class="footer mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
-    >
-      <div class="col-md-4 d-flex align-items-center">
-        <a
-          href="./index.html"
-          class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1"
-        >
-          <img src="./assets/images/Logo.png" alt="" />
+    <footer class="text-center p-4 mt-4">
+      <h3>Acerca de</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit
+        ipsam, velit accusantium impedit illo adipisci soluta? Eos, nihil neque?
+      </p>
+      <h5>305-439-4497</h5>
+      <h5>Bogota DC, Colombia</h5>
+      <div class="iconosRedes">
+        <a href="https://www.facebook.com" class="link-light"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com" class="link-light">
+          <i class="fa-brands fa-instagram"></i>
         </a>
-        <span class="text-muted">&copy; 2021 Company, Inc</span>
+        <a href="https://twitter.com/home" class="link-light">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="#" class="link-light">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
       </div>
-
-      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3">
-          <a class="text-muted" href="https://www.instagram.com"
-            ><i class="ri-instagram-fill"></i
-          ></a>
-        </li>
-
-        <li class="ms-3">
-          <a class="text-muted" href="https://www.twitter.com/home">
-            <i class="ri-twitter-fill"></i
-          ></a>
-        </li>
-        <li class="ms-3">
-          <a class="text-muted" href="https://www.facebook.com"
-            ><i class="ri-facebook-fill"></i
-          ></a>
-        </li>
-      </ul>
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
