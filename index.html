@@ -123,16 +123,18 @@
       </div>
 
       <div class="clientes container-fluid mt-3 mb-2">
-        <h2 class="text-center">Nuestros Clientes</h2>
-        <article id="cliente1" class="mb-3">
-          <h3>Coco</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
-            quidem, doloremque assumenda architecto iste consequuntur quo
-            voluptatum magni sint dolor molestias quae totam harum animi libero
-            tenetur optio dignissimos incidunt!
-          </p>
-          <div>
+        <h2 class="text-center mb-3">Nuestros Clientes</h2>
+        <article id="cliente1" class="mb-3 row">
+          <div class="col-md-6 col-sm-12 align-self-center">
+            <h3>Coco</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti
+              quidem, doloremque assumenda architecto iste consequuntur quo
+              voluptatum magni sint dolor molestias quae totam harum animi
+              libero tenetur optio dignissimos incidunt!
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-8">
             <img
               src="./assets/images/cliente1.jpg"
               alt="Coco el labrador"
@@ -141,15 +143,17 @@
           </div>
         </article>
 
-        <article id="cliente2" class="mb-1">
-          <h3>Kaysa</h3>
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
-            ipsum minima ad dolore sint mollitia dolores velit corporis
-            voluptate, nobis omnis labore fugit distinctio! Ad a veritatis ipsam
-            reprehenderit minus!
-          </p>
-          <div>
+        <article id="cliente2" class="mb-1 row flex-row-reverse">
+          <div class="col-md-6 col-sm-12 align-self-center">
+            <h3>Kaysa</h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi,
+              ipsum minima ad dolore sint mollitia dolores velit corporis
+              voluptate, nobis omnis labore fugit distinctio! Ad a veritatis
+              ipsam reprehenderit minus!
+            </p>
+          </div>
+          <div class="col-md-6 col-sm-12">
             <img
               src="./assets/images/cliente2.jpg"
               alt="Kaysa Maltese"
@@ -184,19 +188,29 @@
       </p>
       <h5>305-439-4497</h5>
       <h5>Bogota DC, Colombia</h5>
-      <div class="iconosRedes">
-        <a href="https://www.facebook.com" class="link-light"
-          ><i class="fa-brands fa-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com" class="link-light">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://twitter.com/home" class="link-light">
-          <i class="fa-brands fa-twitter"></i>
-        </a>
-        <a href="#" class="link-light">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
+      <div class="iconosRedes d-flex flex-column align-items-center">
+        <ul class="d-flex">
+          <li class="px-2">
+            <a href="https://www.facebook.com" class="link-light"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li class="px-2">
+            <a href="https://www.instagram.com" class="link-light">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="https://twitter.com/home" class="link-light">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li class="px-2">
+            <a href="#" class="link-light">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
