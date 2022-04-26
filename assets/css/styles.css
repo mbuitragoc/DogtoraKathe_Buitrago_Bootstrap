@@ -1,9 +1,9 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
-footer{
+footer {
   background-color: #8d1eac !important;
   color: white;
 }
@@ -12,11 +12,22 @@ footer{
   margin-bottom: 20px;
 }
 
-ul li{
+ul li {
   list-style: none;
 }
 
-.iconosRedes{
+.iconosRedes {
   font-size: 24px;
   text-decoration: none;
+}
+
+.descripcion {
+  background-image: url(https://img.freepik.com/foto-gratis/pelo-corte-groomer-perro-pequeno-salon-salon-belleza-perros_51195-2358.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.descripcion_Par{
+  background-color: rgba(0, 139, 139, 0.637);
+  border-radius: 25px;
 }
