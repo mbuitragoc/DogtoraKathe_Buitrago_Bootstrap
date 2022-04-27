@@ -78,55 +78,82 @@
       </nav>
     </header>
 
-    <main>
-      <h2 class="text-center border-bottom mb-3">Galeria</h2>
-      <div>
-        <img
-          src="./assets/images/cliente1.jpg"
-          alt="Cliente 1"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img
-          src="./assets/images/cliente2.jpg"
-          alt="Cliente 2"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img
-          src="./assets/images/cliente3.jpg"
-          alt="Cliente 3"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img
-          src="./assets/images/cliente4.jpg"
-          alt="Cliente 4"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img
-          src="./assets/images/cliente5.jpg"
-          alt="Cliente 5"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img
-          src="./assets/images/cliente6.jpg"
-          alt="Cliente 6"
-          class="img-fluid"
-        />
-      </div>
-      <div>
-        <img src="./assets/images/local1.jpg" alt="Local 1" class="img-fluid" />
-      </div>
-      <div>
-        <img src="./assets/images/local2.jpg" alt="Local 2" class="img-fluid" />
+    <main class="mx-2">
+      <h2 class="text-center border-bottom">Galeria</h2>
+      <div
+        id="carouselExampleControls"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./assets/images/cliente1.jpg"
+              class="d-block w-100"
+              alt="Cliente 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/cliente2.jpg"
+              class="d-block w-100"
+              alt="Cliente 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/cliente4.jpg"
+              class="d-block w-100"
+              alt="Cliente 4"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/cliente5.jpg"
+              class="d-block w-100"
+              alt="Cliente 5"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/cliente6.jpg"
+              class="d-block w-100"
+              alt="Cliente 6"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/local1.jpg"
+              class="d-block w-100"
+              alt="Local 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./assets/images/local2.jpg"
+              class="d-block w-100"
+              alt="Local 2"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleControls"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </main>
 
